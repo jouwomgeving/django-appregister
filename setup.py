@@ -16,17 +16,13 @@ with open('requirements/test.txt') as f:
 
 setup(
     name="django-appregister",
-    version=":versiontools:appregister:",
+    version="0.4",
     url='http://appregister.readthedocs.org/',
     license=license,
     description="A Django app that provides the building blocks for an app registry system",
     long_description=readme,
     author='Dougal Matthews',
     author_email='dougal85@gmail.com',
-    setup_requires=[
-        'versiontools >= 1.6',
-        'django'
-    ],
     test_suite="runtests.runtests",
     tests_require=test_requirements,
     packages=find_packages(exclude=('tests', 'docs')),
